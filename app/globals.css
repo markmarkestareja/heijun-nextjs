@@ -1,26 +1,64 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary: #f00000;
+  --primary-hover: hsla(0, 100%, 47%, 0.8);
+  --primary-active: hsla(0, 100%, 47%, 0.6);
+  --light: #fffcf4;
+  --light-hover: rgb(255, 255, 255, 0.8);
+  --light-active: rgb(255, 255, 255, 0.6);
+  --grey: #f7f7f7;
+  --dark: #271c05;
+  --gradient: linear-gradient(to top left, #af821d, #dbc774, #eff0b9);
+
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-active: var(--primary-active);
+  --color-light: var(--light);
+  --color-light-hover: var(--light-hover);
+  --color-light-active: var(--light-active);
+  --color-grey: var(--grey);
+  --color-dark: var(--dark);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--light);
+  color: var(--dark);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+  font-size: 32px;
+  line-height: 1;
+  margin: 0 4px;
+}
+
+p{
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 64px;
+  }
 }
