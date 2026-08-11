@@ -17,10 +17,10 @@ export default function Offer() {
             gap-2
             text-center
             ">
-        <h2>What WE Offer</h2>
+        <h2>What We Offer</h2>
         <p>
           We are your trusted partner in hospitality, providing everything your
-          property needs—from linens and amenities to housekeeping and service
+          property~ needs—from linens and amenities to housekeeping and service
           equipment. Our curated selection ensures consistent quality and value
           for every business needs.
         </p>

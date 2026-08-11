@@ -22,6 +22,7 @@
   --color-light-active: var(--light-active);
   --color-grey: var(--grey);
   --color-dark: var(--dark);
+  --color-gradient: var(--gradient);
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -44,6 +45,7 @@ h1{
 }
 h2 {
   font-size: 28px;
+  text-align: center;
 }
 
 p{
