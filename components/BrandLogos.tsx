@@ -8,12 +8,15 @@ export default function BrandLogos() {
       className="
         flex 
         flex-col 
+        items-center
         gap-9
         bg-[linear-gradient(to_top_left,#af821d,#dbc774,#eff0b9)]
         ">
       <h2>Brands Who Trust Us</h2>
 
-      <Marquee>
+      <Marquee
+        className="max-w-250"
+        >
         {Brands.map((brand) => (
           <div
             key={brand.name}
