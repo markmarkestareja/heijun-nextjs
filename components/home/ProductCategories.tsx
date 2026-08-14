@@ -44,6 +44,8 @@ export default function ProductCategories() {
             {/* <Button className="w-full">View Event</Button> */}
           </CardFooter>
         </Card>
+
+        
       </div>
     </section>
   );
