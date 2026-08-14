@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   Card,
   CardAction,
@@ -23,14 +24,16 @@ export default function ProductCategories() {
           quality for your property.
         </p>
       </div>
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         <Card className="relative mx-auto w-full max-w-sm pt-0">
-          <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
-          <img
-            src="https://avatar.vercel.sh/shadcn1"
-            alt="Event cover"
-            className="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
-          />
+          <div className="relative aspect-video w-full overflow-hidden">
+            <Image
+              src="/images/home/categories-image/amenities.webp"
+              alt="Event cover"
+              fill
+              className="object-cover transition-all dark:brightness-40"
+            />
+          </div>
           <CardHeader>
             <CardAction></CardAction>
             <CardTitle>Hotel Amenities</CardTitle>

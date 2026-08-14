@@ -14,6 +14,7 @@
   --grey: #f7f7f7;
   --dark: #271c05;
   --gradient: linear-gradient(to top left, #af821d, #dbc774, #eff0b9);
+
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
