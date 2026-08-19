@@ -8,11 +8,16 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
+import { ProductCategoriesData } from "@/data/ProductCategories";
+import Link from "next/link";
+
 export default function ProductCategories() {
   return (
     <section
       className="
-        border"
+        flex
+        flex-col
+        gap-9"
     >
       <div>
         <h2>Our Products</h2>
@@ -24,31 +29,31 @@ export default function ProductCategories() {
           quality for your property.
         </p>
       </div>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <Card className="relative mx-auto w-full max-w-sm pt-0">
-          <div className="relative aspect-video w-full overflow-hidden">
-            <Image
-              src="/images/home/categories-image/amenities.webp"
-              alt="Event cover"
-              fill
-              className="object-cover transition-all dark:brightness-40"
-            />
-          </div>
-          <CardHeader>
-            <CardAction></CardAction>
-            <CardTitle>Hotel Amenities</CardTitle>
-            <CardDescription>
-              Delight your guests with premium hotel essentials such as
-              toiletries, bath kits, and spa-inspired items designed to elevate
-              their stay and reflect your brand’s hospitality.
-            </CardDescription>
-          </CardHeader>
-          <CardFooter>
-            {/* <Button className="w-full">View Event</Button> */}
-          </CardFooter>
-        </Card>
 
-        
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {ProductCategoriesData.map((productCategory, index) => (
+          <Link href="/about" key={index}>
+            <Card className="relative mx-auto w-full h-full pt-0">
+              <div className="relative aspect-video w-full overflow-hidden">
+                <Image
+                  src={`/images/home/categories-image/${productCategory.image}`}
+                  alt={productCategory.title}
+                  fill
+                  className="object-cover transition-all dark:brightness-40"
+                />
+              </div>
+              <CardHeader>
+                <CardAction></CardAction>
+                <CardTitle
+                  className="text-lg md:text-2xl font-semi-bold"
+                >{productCategory.title}</CardTitle>
+                <CardDescription
+                  className="text-sm md:text-base lg:text-xl text-dark-muted"
+                >{productCategory.description}</CardDescription>
+              </CardHeader>
+            </Card>
+          </Link>
+        ))}
       </div>
     </section>
   );
