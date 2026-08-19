@@ -2,6 +2,7 @@ import Hero from "@/components/home/Hero";
 import BrandLogos from "@/components/BrandLogos";
 import Offer from "@/components/home/Offer";
 import ProductCategories from "@/components/home/ProductCategories";
+import About from "@/components/home/About";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <BrandLogos />
       <Offer />
       <ProductCategories />
+      <About />
     </div>
   );
 }
