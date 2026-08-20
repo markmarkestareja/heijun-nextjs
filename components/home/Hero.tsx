@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import { ButtonPrimary, ButtonSecondary } from "../ui/button";
 
 export default function Hero() {
   return (
@@ -30,47 +30,8 @@ export default function Hero() {
         <h1 className="text-[#704D00] font-bold">Your Partner in World-Class Hotel Essentials</h1>
         <p>HEIJUN is a One-Stop-Shop for your hotel product needs.</p>
         <div className="flex flex-col md:flex-row gap-4">
-          <Link
-            href="/"
-            className="
-              inline-block
-              rounded-[5px]
-              px-6.5
-              py-3
-              text-light
-              bg-linear-to-r
-              from-[#ee0000]
-              via-[#b50202]
-              to-[#ee0000]
-              bg-[length:200%_auto]
-              bg-left
-              transition-all
-              duration-500
-              hover:bg-right
-              active:bg-[hsla(0,100%,47%,0.6)]
-            "
-          >
-            Explore More
-          </Link>
-
-          <Link
-            href="/"
-            className="
-              inline-block
-              rounded-[5px]
-              px-6.5
-              py-3
-              text-primary
-              bg-light
-              transition-all
-              duration-300
-              ease-in-out
-              hover:bg-light-hover
-              active:bg-light-active
-            "
-          >
-            Get in touch
-          </Link>
+          <ButtonPrimary link="/about" label="Learn More" />
+          <ButtonSecondary link="/about" label="Get In Touch" />
         </div>
       </div>
     </section>

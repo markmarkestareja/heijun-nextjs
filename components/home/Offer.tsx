@@ -31,7 +31,7 @@ export default function Offer() {
             h-[30vh] md:h-[50vh] lg:h-[70vh]
             overflow-hidden
             relative
-            rounded-lg
+            rounded-xl
             ">
         <Image
           src="/images/home/bottle-container.webp"

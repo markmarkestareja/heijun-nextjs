@@ -19,7 +19,7 @@ export default function ProductCategories() {
         flex-col
         gap-9"
     >
-      <div>
+      <div className="flex flex-col gap-2">
         <h2>Our Products</h2>
         <p>
           Discover a complete range of premium hotel supplies designed to
@@ -45,10 +45,10 @@ export default function ProductCategories() {
               <CardHeader>
                 <CardAction></CardAction>
                 <CardTitle
-                  className="text-lg md:text-2xl font-semi-bold"
+                  className="text-xl md:text-2xl font-bold"
                 >{productCategory.title}</CardTitle>
                 <CardDescription
-                  className="text-sm md:text-base lg:text-xl text-dark-muted"
+                  className="text-sm md:text-base lg:text-lg text-dark-muted"
                 >{productCategory.description}</CardDescription>
               </CardHeader>
             </Card>
