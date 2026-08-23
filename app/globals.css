@@ -125,6 +125,22 @@ h2 {
   font-weight: bold;
   line-height: 100%;
 }
+h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+h5 {
+  font-weight: bold;
+  color: var(--dark-muted);
+}
+
+ul li {
+  color: var(--dark-muted);
+}
+
+ul li span{
+  font-weight: bold;
+}
 
 p{
   font-size: 14px;

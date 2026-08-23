@@ -5,10 +5,12 @@ import ProductCategories from "@/components/home/ProductCategories";
 import About from "@/components/home/About";
 import Gallery from "@/components/home/Gallery";
 import CTA from "@/components/home/CTA";
+import Footer from "@/components/Footer";
+import Copyright from "@/components/Copyright";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Hero />
       <BrandLogos />
       <Offer />
@@ -16,6 +18,8 @@ export default function Home() {
       <About />
       <Gallery />
       <CTA />
-    </div>
+      <Footer />
+      <Copyright />
+    </>
   );
 }
