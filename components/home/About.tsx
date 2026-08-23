@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import {ButtonPrimary } from "../ui/button";
+import { ButtonPrimary } from "../ui/button";
 
 export default function About() {
   return (
@@ -27,7 +27,11 @@ export default function About() {
           products, restaurant equipment for guests, housekeeping supplies and
           lobby products.
         </p>
-        <ButtonPrimary link="/about" label="Learn More" addClass="Block w-max mt-9"/>
+        <ButtonPrimary
+          link="/about"
+          label="Learn More"
+          addClass="Block w-max mt-9"
+        />
       </div>
 
       <div className="relative h-full w-full lg:flex-1 rounded-xl lg:rounded-l-xl lg:rounded-r-none overflow-hidden pt-10 pb-10">

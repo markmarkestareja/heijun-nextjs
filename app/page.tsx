@@ -4,6 +4,7 @@ import Offer from "@/components/home/Offer";
 import ProductCategories from "@/components/home/ProductCategories";
 import About from "@/components/home/About";
 import Gallery from "@/components/home/Gallery";
+import CTA from "@/components/home/CTA";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <ProductCategories />
       <About />
       <Gallery />
+      <CTA />
     </div>
   );
 }

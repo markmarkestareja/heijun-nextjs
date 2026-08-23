@@ -1,49 +1,40 @@
-"use client"
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
-import { GalleryImages } from '@/data/GalleryImages';
+"use client";
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import Image from "next/image";
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import { GalleryImages } from "@/data/GalleryImages";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 export default function SwiperCarousel() {
   return (
-    <div style={{ maxWidth: '750px', margin: '0 auto' }}>
+    <div className="mx-auto w-full max-w-[750px]">
       <Swiper
         modules={[Navigation, Pagination]}
-        spaceBetween={50}
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
-        loop={true}
-        style={{
-          height: '450px',
-          width: '100%',
-        }}
+        loop
+        className="aspect-[3/2] w-full"
       >
-        
-        {
-          GalleryImages.map((GalleryImage, index) => (
-            <SwiperSlide key={index}  
-              style={{
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                height: '100%', // Ensures the slide container fills out the swiper canvas frame
-              }}
-            >
-              <img src={`/images/home/categories-image/${GalleryImage.img}`} alt={GalleryImage.alt} 
-                style={{ 
-                  width: '100%', 
-                  height: '100%', 
-                  objectFit: 'contain',
-                }}  
-              />
-            </SwiperSlide>
-          ))
-        }
+        {GalleryImages.map((GalleryImage, index) => (
+          <SwiperSlide
+            key={index}
+            className="relative flex items-center justify-center"
+          >
+            <Image
+              src={`/images/home/categories-image/${GalleryImage.img}`}
+              alt={GalleryImage.alt}
+              fill
+              className="object-cover"
+              sizes="(max-width: 750px) 100vw, 750px"
+            />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
