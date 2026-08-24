@@ -5,9 +5,9 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --primary: oklch(0.205 0 0);
-  --primary-hover: hsla(0, 100%, 47%, 0.8);
-  --primary-active: hsla(0, 100%, 47%, 0.6);
+  --primary: hsla(0, 100%, 47%);
+  --primary-hover: hsla(0, 100%, 47%, 0.7);
+  --primary-active: hsla(0, 100%, 47%, 0.4);
   --light: #fffcf4;
   --light-hover: rgb(255, 255, 255, 0.8);
   --light-active: rgb(255, 255, 255, 0.6);
