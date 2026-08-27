@@ -19,7 +19,7 @@ export default function SwiperCarousel() {
         navigation
         pagination={{ clickable: true }}
         loop
-        className="aspect-[3/2] w-full"
+        className="aspect-3/2 w-full"
       >
         {GalleryImages.map((GalleryImage, index) => (
           <SwiperSlide

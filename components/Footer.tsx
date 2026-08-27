@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import "./Footer.css";
 
 export default function Footer() {
   return (
@@ -41,8 +42,8 @@ export default function Footer() {
               <Link href="/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
+                  width="100%"
+                  height="100%"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -57,8 +58,8 @@ export default function Footer() {
               <Link href="/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
+                  width="100%"
+                  height="100%"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -72,8 +73,8 @@ export default function Footer() {
               <Link href="/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
+                  width="100%"
+                  height="100%"
                   viewBox="0 0 32 32"
                 >
                   <path

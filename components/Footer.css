@@ -1,0 +1,14 @@
+ul li svg{
+    max-width: 32px;
+    transition: color 0.3s ease-in-out;
+}
+
+ul li svg:hover{
+    color: var(--color-primary);
+}
+
+@media (min-width: 1000px) {
+    ul li svg{
+        max-width: 54px;
+    }
+}
