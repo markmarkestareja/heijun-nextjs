@@ -34,8 +34,8 @@ export default function Offer() {
             rounded-xl
             ">
         <Image
-          src="/images/home/bottle-container.webp"
-          alt="Offer"
+          src="/images/home/pump-bottle-dispenser.webp"
+          alt="Hotel bathroom pump bottle dispenser"
           fill
           className="object-cover"
         />

@@ -1,6 +1,7 @@
 export const ProductCategoriesData = [
     {
-        image: "amenities.webp",
+        image: "hotel-amenities-philippines.webp",
+        alt: "Hotel amenities in the philippines",
         title: "Hotel Amenities",
         description: "Delight your guests with premium hotel essentials such as toiletries, bath kits, and spa-inspired items designed to elevate their stay and reflect your brand’s hospitality."
     },

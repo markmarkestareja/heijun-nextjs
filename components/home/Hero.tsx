@@ -7,8 +7,8 @@ export default function Hero() {
 
       <div className="absolute z-0 h-full w-full">
         <Image
-          src="/images/home/hero.webp"
-          alt="Image"
+          src="/images/home/heijun-hotel-supplies-philippines.webp"
+          alt="Heijun Hotel Supplies and General Merchandise in the Philippines"
           fill
           className="object-cover"
         />

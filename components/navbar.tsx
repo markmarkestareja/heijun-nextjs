@@ -12,10 +12,10 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between">
 
         {/* Logo */}
-        <Link href="/" className="relative h-15 w-32 lg:w-80">
+        <Link href="/" aria-label="Heijun Hotel Supply & General Merchandise" className="relative h-15 w-32 lg:w-80">
           <Image
-            src="/images/logo/logo-text.webp"
-            alt="Heijun Hotel Supply"
+            src="/images/logo/heijun-hotel-supplies-general-merchandise.webp"
+            alt=""
             fill
             className="object-contain object-left"
           />
