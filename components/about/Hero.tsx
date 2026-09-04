@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="text-center flex flex-col gap-5 justify-center items-center bg-(image:--gradient)">
-      <div className="max-w-250 flex flex-col gap-4">
+      <div className="max-w-250 flex flex-col gap-4 pt-20">
         <h1>Who We Are</h1>
         <div className="relative h-[50vh] w-full overflow-hidden rounded-lg">
           <Image

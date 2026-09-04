@@ -4,7 +4,7 @@ import "./hero.css";
 export default function hero() {
   return (
     <section className="bg-(image:--gradient)">
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6 pt-20">
         <div className="flex flex-col gap-4">
           <h1>What Can We Help You With?</h1>
           <p>

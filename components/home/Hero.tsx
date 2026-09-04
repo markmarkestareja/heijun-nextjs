@@ -4,6 +4,7 @@ import { ButtonPrimary, ButtonSecondary } from "../ui/button";
 export default function Hero() {
   return (
     <section className="relative h-dvh w-full flex flex-col justify-center items-center">
+
       <div className="absolute z-0 h-full w-full">
         <Image
           src="/images/home/hero.webp"
