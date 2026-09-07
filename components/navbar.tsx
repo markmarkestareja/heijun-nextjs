@@ -15,9 +15,11 @@ export default function Navbar() {
         <Link href="/" aria-label="Heijun Hotel Supply & General Merchandise" className="relative h-15 w-32 lg:w-80">
           <Image
             src="/images/logo/heijun-hotel-supplies-general-merchandise.webp"
-            alt=""
+            alt="Heijun Hotel Supply & General Merchandise"
             fill
+            sizes="(max-width: 1024px) 128px, 320px"
             className="object-contain object-left"
+            loading="eager"
           />
         </Link>
 

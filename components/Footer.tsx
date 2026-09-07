@@ -17,7 +17,7 @@ export default function Footer() {
       "
       >
         <div className="relative h-50 w-50 shrink-0">
-          <Image src="/images/logo/emblem.webp" alt="Logo" fill className="" />
+          <Image src="/images/logo/heijun-emblem.webp" alt="Heijun Hotel supplies and General Merchandise Emblem" fill className="" />
         </div>
 
         <div className="flex flex-col gap-4 items-center text-center lg:text-start flex-1">

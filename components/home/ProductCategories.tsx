@@ -1,7 +1,6 @@
 import Image from "next/image";
 import {
   Card,
-  CardAction,
   CardDescription,
   CardHeader,
   CardTitle,
@@ -33,16 +32,16 @@ export default function ProductCategories() {
         {ProductCategoriesData.map((productCategory, index) => (
           <Link href="/about" key={index}>
             <Card className="relative mx-auto w-full h-full pt-0">
-              <div className="relative aspect-video w-full overflow-hidden">
+              <div className="h-auto w-full relative aspect-video overflow-hidden">
                 <Image
                   src={`/images/home/categories-image/${productCategory.image}`}
                   alt={productCategory.title}
                   fill
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                   className="object-cover transition-all dark:brightness-40"
                 />
               </div>
               <CardHeader>
-                <CardAction></CardAction>
                 <CardTitle
                   className="text-xl md:text-2xl font-bold"
                 >{productCategory.title}</CardTitle>

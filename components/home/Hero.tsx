@@ -3,14 +3,16 @@ import { ButtonPrimary, ButtonSecondary } from "../ui/button";
 
 export default function Hero() {
   return (
-    <section className="relative h-dvh w-full flex flex-col justify-center items-center">
+    <section className="relative h-dvh w-screen flex flex-col justify-center items-center">
 
       <div className="absolute z-0 h-full w-full">
         <Image
           src="/images/home/heijun-hotel-supplies-philippines.webp"
           alt="Heijun Hotel Supplies and General Merchandise in the Philippines"
           fill
+          sizes="100vw"
           className="object-cover"
+          loading="eager"
         />
       </div>
       <div 

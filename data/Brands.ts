@@ -1,27 +1,35 @@
 export const Brands = [
     {
-        name: "Brand 1",
-        logo: "1.webp"
+        name: "Eurotel",
+        logo: "eurotel.webp"
     },
     {
-        name: "Brand 2",
-        logo: "2.webp"
+        name: "Seabird Resort Boracay",
+        logo: "seabird-resort-boracay.webp"
     },
     {
-        name: "Brand 3",
-        logo: "3.webp"
+        name: "Grand Blue Beach Hotel",
+        logo: "grand-blue-beach-hotel.webp"
     },
     {
-        name: "Brand 4",
-        logo: "4.webp"
+        name: "Boracay Ocean Club Resort & Spa",
+        logo: "boracay-ocean-club-resort-spa.webp"
     },
     {
-        name: "Brand 5",
-        logo: "5.webp"
+        name: "Estacio Uno Boracay Lifestyle Resort",
+        logo: "estacio-uno-boracay-lifestyle-resort.webp"
     },
     {
-        name: "Brand 6",
-        logo: "6.webp"
+        name: "Red Coconut",
+        logo: "red-coconut.webp"
+    },
+    {
+        name: "True Home Hotel & Bistro",
+        logo: "true-home-hotel-bistro.webp"
+    },
+    {
+        name: "Travelers Inn",
+        logo: "travelers-inn.webp"
     },
 
 ]

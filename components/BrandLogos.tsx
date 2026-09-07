@@ -24,10 +24,10 @@ export default function BrandLogos() {
           >
             <Image
               src={`/images/brands/${brand.logo}`}
-              alt={brand.name}
+              alt={`${brand.name} logo`}
               width={80}
               height={80}
-              className="object-contain"
+              className="h-12 w-auto"
             />
           </div>
         ))}
