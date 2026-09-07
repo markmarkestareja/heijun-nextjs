@@ -9,7 +9,7 @@ export default function CTA() {
         src="/images/home/main-cta-img.webp"
         alt="image"
         fill
-        className="object-cover"
+        className="object-cover scale-x-[-1]"
       />
       <div 
         className="

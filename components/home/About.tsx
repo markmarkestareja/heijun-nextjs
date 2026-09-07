@@ -36,10 +36,11 @@ export default function About() {
 
       <div className="relative h-full w-full lg:flex-1 rounded-xl lg:rounded-l-xl lg:rounded-r-none overflow-hidden pt-10 pb-10">
         <Image
-          src="/images/home/hero.webp"
-          alt="About Us"
+          src="/images/home/heijun-team.webp"
+          alt="Heijun Team at the office"
           fill
           className="object-cover"
+          loading="lazy"
         />
       </div>
     </section>

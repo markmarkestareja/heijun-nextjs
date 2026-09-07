@@ -28,6 +28,7 @@ export default function BrandLogos() {
               width={80}
               height={80}
               className="h-12 w-auto"
+              loading="lazy"
             />
           </div>
         ))}

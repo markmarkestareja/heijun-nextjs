@@ -6,10 +6,11 @@ export default function mission() {
     <section className="flex flex-col lg:flex-row-reverse gap-9 items-center">
       <div className="relative w-full h-75 lg:h-100 flex-1">
         <Image
-          src="/images/home/main-cta-img.webp"
-          alt="image"
+          src="/images/gallery/bathroom-pump-dispencer-set.webp"
+          alt="Bathroom Pump Dispenser Set"
           fill
           className="object-cover"
+          loading="lazy"
         />
       </div>
       <div className="flex flex-col gap-4 text-center flex-1">

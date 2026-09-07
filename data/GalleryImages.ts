@@ -1,22 +1,22 @@
 export const GalleryImages = [
     {
-        img: "amenities.webp",
-        alt: "amenities",
+        img: "bathroom-pump-dispencer-set.webp",
+        alt: "bathroom pump dispenser set",
     },
     {
-        img: "guest.webp",
-        alt: "guest",
+        img: "body-wash-shampoo-conditioner-hotel-soap.webp",
+        alt: "body wash, shampoo, and conditioner hotel soap",
     },
     {
-        img: "housekeeping.webp",
-        alt: "housekeeping",
+        img: "dental-kit-shower-cap.webp",
+        alt: "dental kit and shower cap",
     },
     {
-        img: "linen.webp",
-        alt: "linen",
+        img: "pillow-blanket.webp",
+        alt: "pillow and blanket",
     },
     {
-        img: "lobby.webp",
-        alt: "lobby",
+        img: "shower-pump-dispencer.webp",
+        alt: "shower pump dispenser",
     },
 ]

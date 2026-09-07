@@ -8,22 +8,30 @@ export default function Hero() {
         <h1>Who We Are</h1>
         <div className="relative h-[50vh] w-full overflow-hidden rounded-lg">
           <Image
-            src="/images/home/bottle-container.webp"
-            alt="image"
+            src="/images/home/heijun-team.webp"
+            alt="Heijun Team at the office"
             fill
             className="object-cover"
+            loading="eager"
           />
         </div>
         <p>
           HEIJUN HOTEL SUPPLIES is your trusted partner, catering to all your
-          hotel supply needs with utmost convenience. We take pride in offering
-          personalized hotel lines and towels carefully designed by our experts
-          who have nearly three decades worth of experience in the field of
-          fabric and textiles. We are committed to providing linen products and
-          towels at various price points without compromising its quality. We
-          guarantee each product has gone through our rigorous evaluation from
-          our factory to delivery, ensuring each product meets our standards. To
-          emphasize your brand and establishment, we offer customization
+          hotel supply needs with utmost convenience.
+        </p>
+
+        <p>
+          We take pride in offering personalized hotel lines and towels
+          carefully designed by our experts who have nearly three decades worth
+          of experience in the field of fabric and textiles. We are committed to
+          providing linen products and towels at various price points without
+          compromising its quality. We guarantee each product has gone through
+          our rigorous evaluation from our factory to delivery, ensuring each
+          product meets our standards.
+        </p>
+
+        <p>
+          To emphasize your brand and establishment, we offer customization
           services for our hotel amenities. We are able to match the colors,
           fragrance, and design of our products to your unique line. We make
           sure your hotel leaves a lasting impression of luxury and quality to

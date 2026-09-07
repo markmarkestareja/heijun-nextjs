@@ -24,10 +24,10 @@ export default function SwiperCarousel() {
         {GalleryImages.map((GalleryImage, index) => (
           <SwiperSlide
             key={index}
-            className="relative flex items-center justify-center"
+            className="relative flex items-center justify-center rounded-xl overflow-hidden"
           >
             <Image
-              src={`/images/home/categories-image/${GalleryImage.img}`}
+              src={`/images/gallery/${GalleryImage.img}`}
               alt={GalleryImage.alt}
               fill
               className="object-cover"

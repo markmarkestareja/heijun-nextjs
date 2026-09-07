@@ -39,7 +39,7 @@ export default function Footer() {
           <h4>Follow Us</h4>
           <ul className="flex gap-4">
             <li>
-              <Link href="/">
+              <Link href="/" aria-label="Heijun Facebook Page">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="100%"
@@ -55,7 +55,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/" aria-label="Heijun Instagram Page">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="100%"
@@ -70,7 +70,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/" aria-label="Heijun LinkedIn Page">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="100%"
