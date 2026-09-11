@@ -139,6 +139,7 @@ export default function hero() {
 
           <div className="flex flex-1">
             <iframe
+              aria-label="Google Maps location of Heijun Hotel Supply General Merchandise in Angeles City, Philippines"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3850.927534510325!2d120.57791697496054!3d15.162323885393294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396f3000fcf5f8d%3A0x8eb939621e1bd4fd!2sHeiJun%20Hotel%20Supply%20General%20Merchandise!5e0!3m2!1sen!2sph!4v1787560051170!5m2!1sen!2sph"
               width="600"
               height="450"

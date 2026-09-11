@@ -89,9 +89,9 @@ export default function Footer() {
 
         <div className="flex w-full min-w-0 flex-3 flex-col gap-4 items-center text-center lg:items-start lg:text-left">
           <h4>Contact Information</h4>
-
+          <h5>Angeles Branch</h5>
           <ul className="flex w-full min-w-0 flex-col gap-2">
-            <h5>Angeles Branch</h5>
+            
 
             <li className="w-full min-w-0 wrap-break-words">
               Blk. 7 Lot 1 Malabanias Rd. Cor Josefa St. Josefa Subd.,
@@ -123,9 +123,9 @@ export default function Footer() {
               </Link>
             </li>
           </ul>
-
+          <h5>Boracay Branch</h5>
           <ul className="flex w-full min-w-0 flex-col gap-2">
-            <h5>Boracay Branch</h5>
+            
 
             <li className="w-full min-w-0 wrap-break-words">
               Lovells Compound, Boracay, Main Road Balabag, Boracay Malay, Aklan
