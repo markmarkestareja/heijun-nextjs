@@ -37,7 +37,7 @@ export default function ProductCard({
           <CardHeader className="flex flex-col justify-between h-full p-4">
             <div className="flex flex-col gap-2">
               <CardTitle>{product.productName}</CardTitle>
-              <CardDescription>{product.productDescription}</CardDescription>
+              <CardDescription className="hidden lg:block">{product.productDescription}</CardDescription>
             </div>
             <Link href={product.productLink} className="flex items-center mt-4">
               VIEW THIS PRODUCT
