@@ -6,3 +6,6 @@ export interface Product {
     productImageAlt: string;
     productLink: string;
 }
+
+export type ProductCategory =
+    | "HotelAmenities";
