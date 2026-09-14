@@ -7,7 +7,7 @@ export const ProductHotelAmenities: Product[] = [
         productDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, tenetur.",
         productImage: "1",
         productImageAlt: "Nature bath soap product of Heijun",
-        productLink: "/",
+        productLink: "nature-bath-soap",
     },
     {
         id: 1,

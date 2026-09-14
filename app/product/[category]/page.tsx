@@ -4,6 +4,7 @@ import type { ProductCategory } from "@/types/product";
 
 const categories: Record<string, ProductCategory> = {
   "hotel-amenities": "HotelAmenities",
+  "linens-and-towels": "LinenTowel",
 } as const;
 
 type Props = {
