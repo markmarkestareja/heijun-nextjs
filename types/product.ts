@@ -16,5 +16,5 @@ export interface Product {
 }
 
 export type ProductCategory =
-    | "HotelAmenities"
-    | "LinenTowel";
+    | "hotel-amenities"
+    | "linens-and-towels";

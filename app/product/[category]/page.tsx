@@ -2,10 +2,10 @@ import ProductCard from "@/components/product/ProductCard";
 import { notFound } from "next/navigation";
 import type { ProductCategory } from "@/types/product";
 
-const categories: Record<string, ProductCategory> = {
-  "hotel-amenities": "HotelAmenities",
-  "linens-and-towels": "LinenTowel",
-} as const;
+const categories: ProductCategory[] = [
+  "hotel-amenities",
+  "linens-and-towels",
+];
 
 type Props = {
   params: Promise<{
@@ -16,9 +16,11 @@ type Props = {
 export default async function ProductCategoryPage({ params }: Props) {
   const { category } = await params;
 
-  const productCategory = categories[
-    category as keyof typeof categories
-  ];
+  if (!categories.includes(category as ProductCategory)) {
+    notFound();
+  }
+
+  const productCategory = category as ProductCategory;
 
   if (!productCategory) {
     notFound();
