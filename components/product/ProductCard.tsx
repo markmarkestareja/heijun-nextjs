@@ -42,7 +42,7 @@ export default function ProductCard({
               <CardTitle>{product.productName}</CardTitle>
               <CardDescription className="hidden lg:block">{product.productDescription}</CardDescription>
             </div>
-            <Link href={`/${productCategory}/${product.productLink}`} className="flex items-center mt-4">
+            <Link href={`/product/${productCategory}/${product.productLink}`} className="flex items-center mt-4">
               VIEW THIS PRODUCT
               <svg
                 xmlns="http://www.w3.org/2000/svg"
