@@ -3,6 +3,11 @@ export interface BedSize {
     dimensions: string;
 }
 
+export interface ProductDetails {
+    productDescription: string;
+    bedSize:  
+}
+
 export interface Product {
     id: number;
     productName: string;

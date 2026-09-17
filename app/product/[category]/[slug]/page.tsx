@@ -26,11 +26,11 @@ export default async function ProductPage({ params }: Props) {
             className="object-contain h-auto w-full"
           />
         </div>
-        <div className="flex-1 pt-4">
-          <h1>Bath Soap</h1>
+        <div className="flex-1 pt-4 flex flex-col justify-start items-start gap-6">
+          <h1 className="m-0!">Bath Soap</h1>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, sequi.</p>
 
-          <div>
+          <div className="flex flex-col gap-3">
             <p>
               <strong>Shapes: </strong>
               Round and Square for Otmeal Soap
