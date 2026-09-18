@@ -4,8 +4,8 @@ export interface BedSize {
 }
 
 export interface ProductDetails {
-    productDescription: string;
-    bedSize:  
+    label: string;
+    value: string;
 }
 
 export interface Product {
@@ -16,10 +16,9 @@ export interface Product {
     productImageAlt: string;
     productLink: string;
 
-    productDetails?: string;
-    bedSize?: BedSize[];
+    productDetails?: ProductDetails[];
 }
 
 export type ProductCategory =
-    | "hotel-amenities"
-    | "linens-and-towels";
+    | "hotel-amenities";
+    

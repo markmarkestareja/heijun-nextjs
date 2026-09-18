@@ -20,7 +20,6 @@ export default function ProductCard({
 
     const products: Record<ProductCategory, Product[]> ={
         "hotel-amenities": ProductHotelAmenities,
-        "linens-and-towels": ProductLinenTowel,
     };
 
 

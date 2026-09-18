@@ -48,6 +48,10 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 
+  --yellow1: #EDE9E4;
+  --yellow2: #E5E0D8;
+  --yellow3: #C9BDA9;
+
 }
 
 @theme inline {
@@ -100,6 +104,10 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+
+  --color-yellow1: var(--yellow1);
+  --color-yellow2: var(--yellow2);
+  --color-yellow3: var(--yellow3);
 }
 
 /* @media (prefers-color-scheme: dark) {

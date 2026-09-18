@@ -4,7 +4,6 @@ import type { ProductCategory } from "@/types/product";
 
 const categories: ProductCategory[] = [
   "hotel-amenities",
-  "linens-and-towels",
 ];
 
 type Props = {
