@@ -4,7 +4,7 @@ export const ProductHotelAmenities: Product[] = [
     {
         id: 1,
         productName: "Nature Bath Soaps",
-        productDescription: "Enhance your guests’ stay with Heijun HotelSup Bath Soap, a practical bathroom essential for hotels, resorts, inns, and other hospitality properties. Available in round and square shapes, with Nature and Green Tea scents and a selection of sizes to suit different guest room requirements. Designed for convenient individual use, these hotel guest soaps provide a simple and presentable addition to your bathroom amenity collection.",
+        productDescription: "Enhance your guests’ stay with Heijun HotelSup Bath Soap, a practical bathroom essential for hotels, resorts, inns, and other hospitality properties. Available in round and square shapes, with Nature and Green Tea scents and a selection of sizes to suit different guest room requirements.",
         productImage: "bath-soap",
         productImageAlt: "Nature bath soap product of Heijun",
         productLink: "nature-bath-soap",

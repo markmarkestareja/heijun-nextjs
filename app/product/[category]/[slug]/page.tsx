@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { ProductHotelAmenities } from "@/data/ProductHotelAmenities";
@@ -18,6 +19,31 @@ type Props = {
     slug: string;
   }>;
 };
+
+export async function generateMetadata({
+  params,
+}: Props): Promise<Metadata>{
+  const { category, slug } = await params;
+
+  if (!(category in products)){
+    return {};
+  }
+
+  const productList = products[category as ProductCategory];
+
+  const product = productList.find(
+    (product) => product.productLink === slug
+  );
+
+  if (!product){
+    return{};
+  }
+
+  return{
+    title: product.metaTitle ?? product.productName,
+    description: product.metaDescription ?? product.productDescription,
+  };
+}
 
 export default async function ProductPage({ params }: Props) {
   const { category, slug } = await params;
@@ -39,12 +65,12 @@ export default async function ProductPage({ params }: Props) {
 
   return (
     <>
-      <section className="border pt-25! bg-yellow1 flex flex-col justify-center items-center">
+      <section className="border pt-25! bg-yellow1 flex flex-col justify-center items-center lg:items-start">
         <p className="mb-4">
           <Link href={`/product/${category}`}>{category}</Link> / {product.productName}
         </p>
         <div className="relative flex flex-col lg:flex-row justify-center items-center lg:items-start">
-          <div className="top-0 flex-1 max-w-150 h-auto bg-yellow2 shadow-[inset_2px_2px_2px_0_rgba(0,0,0,0.25)] border-2 border-yellow3">
+          <div className="top-0 flex-1 max-w-150 h-auto bg-yellow2 shadow-[inset_2px_2px_8px_0_rgba(0,0,0,0.25)] border-2 border-yellow3">
             <Image 
               src={`/images/product/${category}/${product.productImage}.webp`}
               alt={product.productImageAlt}

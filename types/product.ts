@@ -11,7 +11,7 @@ export interface BedSize {
 export interface Product {
     id: number;
     productName: string;
-    productDescription: string;
+    productDescription?: string;
     productImage: string;
     productImageAlt: string;
     productLink: string;
@@ -27,4 +27,3 @@ export interface Product {
 
 export type ProductCategory =
     | "hotel-amenities";
-    

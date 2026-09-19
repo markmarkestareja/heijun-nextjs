@@ -26,8 +26,8 @@ export default function ProductCard({
   return (
     <>
       {productList.map((product, index) => (
-        <Card className="border rounded-none p-0" key={index}>
-          <div className="w-fill p-4">
+        <Card className="rounded-none p-0 gap-0 bg-yellow1 border-0! ring-0! shadow-none!" key={index}>
+          <div className="w-fill p-4 pb-0">
             <Image
               src={`/images/product/hotel-amenities/${product.productImage}.webp`}
               alt={product.productImageAlt}
@@ -38,7 +38,7 @@ export default function ProductCard({
           <CardHeader className="flex flex-col justify-between h-full p-4">
             <div className="flex flex-col gap-2">
               <CardTitle>{product.productName}</CardTitle>
-              <CardDescription className="hidden lg:block">{product.productDescription}</CardDescription>
+              {/* <CardDescription className="hidden lg:block">{product.productDescription}</CardDescription> */}
             </div>
             <Link href={`/product/${productCategory}/${product.productLink}`} className="flex items-center mt-4">
               VIEW THIS PRODUCT
