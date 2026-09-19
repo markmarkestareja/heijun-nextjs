@@ -29,7 +29,7 @@ export default function About() {
         </p>
         <ButtonPrimary
           link="/about"
-          label="Learn More"
+          label="Learn More About Our Company"
           addClass="Block w-max mt-9"
         />
       </div>

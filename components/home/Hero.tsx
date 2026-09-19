@@ -33,7 +33,7 @@ export default function Hero() {
         <h1 className="text-[#704D00] font-bold">Your Partner in World-Class Hotel Essentials</h1>
         <p>HEIJUN is a One-Stop-Shop for your hotel product needs.</p>
         <div className="flex flex-col md:flex-row gap-4">
-          <ButtonPrimary link="/about" label="Learn More" />
+          <ButtonPrimary link="/about" label="Learn More About Our Company" />
           <ButtonSecondary link="/about" label="Get In Touch" />
         </div>
       </div>

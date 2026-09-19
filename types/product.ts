@@ -3,10 +3,10 @@ export interface BedSize {
     dimensions: string;
 }
 
-export interface ProductDetails {
-    label: string;
-    value: string;
-}
+// export interface ProductDetails {
+//     label: string;
+//     value: string;
+// }
 
 export interface Product {
     id: number;
@@ -16,7 +16,13 @@ export interface Product {
     productImageAlt: string;
     productLink: string;
 
-    productDetails?: ProductDetails[];
+    productDetails?: {
+        label: string;
+        value: string;
+    }[];
+
+    metaTitle?: string;
+    metaDescription?: string;
 }
 
 export type ProductCategory =
