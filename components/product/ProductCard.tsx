@@ -8,7 +8,6 @@ import {
 } from "@/components/ui/card";
 import { ProductHotelAmenities } from "@/data/ProductHotelAmenities";
 import type { Product, ProductCategory } from "@/types/product";
-import { ProductLinenTowel } from "@/data/ProductLinenTowel";
 
 type ProductCardProps = {
     productCategory: ProductCategory;
