@@ -126,6 +126,26 @@ export const ProductHotelAmenities: Product[] = [
         productLink: "hotel-amenity-vanity-kit",
         productDetails: [
             {
+                label: "Inclusion",
+                value: "Cotton Buds, Facial Pads/Cotton Balls, & Nail File",
+            },
+            {
+                label: "Packaging",
+                value: "Plastic & Brown Paper",
+            },
+        ],
+        metaTitle: "Hotel Amenity Vanity Kit | Heijun Hotel Supply & General Merchandise",
+        metaDescription: "Explore hotel amenity vanity kits from Heijun HotelSup with essential personal care items for guest rooms, hotels, resorts, and hospitality use.",
+    },
+    {
+        id: 7,
+        productName: "Hotel Key Card Holder",
+        productDescription: "Cardboard key card holder designed for presenting and protecting hotel room key cards. Its compact format provides hotels and resorts with a practical way to organize and present guest key cards.",
+        productImage: "hotel-key-card-holder",
+        productImageAlt: "Cardboard hotel key card holders in assorted designs",
+        productLink: "hotel-key-card-holder",
+        productDetails: [
+            {
                 label: "Material",
                 value: "Plastic",
             },
@@ -138,8 +158,40 @@ export const ProductHotelAmenities: Product[] = [
                 value: "Green Tea",
             },
         ],
-        metaTitle: " | Heijun Hotel Supply & General Merchandise",
-        metaDescription: "",
+        metaTitle: "Hotel Key Card Holder | Heijun Hotel Supply & General Merchandise",
+        metaDescription: "Discover cardboard hotel key card holders from Heijun HotelSup, designed for practical and professional presentation of guest room key cards.",
+    },
+    {
+        id: 8,
+        productName: "Hotel Amenity Razor & Shaving Cream",
+        productDescription: "A convenient shaving amenity set for hotel guest rooms featuring a disposable razor and shaving cream. Available in multiple razor colors and sizes for different hospitality requirements.",
+        productImage: "hotel-amenity-razor-shaving-cream",
+        productImageAlt: "",
+        productLink: "hotel-amenity-razor-shaving-cream",
+        productDetails: [
+            {
+                label: "Available Colors (Razor)",
+                value: " White, Black, Transparent, & White and Blue",
+            },
+            {
+                label: "Blades (Razor)",
+                value: "2",
+            },
+            {
+                label: "Length (Razor)",
+                value: "98mm, 100mm, 115mm, & 120mm",
+            },
+            {
+                label: "Container (Shaving cream)",
+                value: "98mm, 100mm, 115mm, & 120mm",
+            },
+            {
+                label: "Weight (Shaving cream)",
+                value: "98mm, 100mm, 115mm, & 120mm",
+            },
+        ],
+        metaTitle: "Hotel Razor & Shaving Cream | Heijun Hotel Supply & General Merchandise",
+        metaDescription: "Shop hotel razor and shaving cream amenities from Heijun HotelSup, providing a convenient personal grooming essential for hotel and resort guests.",
     },
     {
         id: 5,
