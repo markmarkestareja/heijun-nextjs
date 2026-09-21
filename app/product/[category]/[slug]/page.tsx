@@ -61,7 +61,7 @@ export default async function ProductPage({ params }: Props) {
   if(!product){
     notFound();
   }
-
+// shadow-[inset_2px_2px_8px_0_rgba(0,0,0,0.25)] border-2 border-yellow3
 
   return (
     <>
@@ -70,7 +70,7 @@ export default async function ProductPage({ params }: Props) {
           <Link href={`/product/${category}`}>{category}</Link> / {product.productName}
         </p>
         <div className="relative flex flex-col lg:flex-row justify-center items-center lg:items-start">
-          <div className="top-0 flex-1 max-w-150 h-auto bg-yellow2 shadow-[inset_2px_2px_8px_0_rgba(0,0,0,0.25)] border-2 border-yellow3">
+          <div className="top-0 flex-1 max-w-150 h-auto bg-yellow2">
             <Image 
               src={`/images/product/${category}/${product.productImage}.webp`}
               alt={product.productImageAlt}
@@ -79,7 +79,7 @@ export default async function ProductPage({ params }: Props) {
               className="object-contain h-auto w-full"
             />
           </div>
-          <div className="flex-1 p-4 flex flex-col justify-start item-center lg:items-start gap-6">
+          <div className="flex-1 p-4 ml-8 flex flex-col justify-start item-center lg:items-start gap-6">
             <h1 className="m-0!">
               {product.productName}
             </h1>
