@@ -7,6 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { ProductHotelAmenities } from "@/data/ProductHotelAmenities";
+import { ProductLinenTowel } from "@/data/ProductLinenTowel";
 import type { Product, ProductCategory } from "@/types/product";
 
 type ProductCardProps = {
@@ -19,6 +20,7 @@ export default function ProductCard({
 
     const products: Record<ProductCategory, Product[]> ={
         "hotel-amenities": ProductHotelAmenities,
+        "linens-and-towels": ProductLinenTowel,
     };
 
 
