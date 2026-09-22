@@ -3,7 +3,7 @@ import { Product } from "@/types/product";
 export const ProductHotelAmenities: Product[] = [
     {
         id: 1,
-        productName: "Nature Bath Soaps",
+        productName: "Bath Soaps",
         productDescription: "Enhance your guests’ stay with Heijun Hotel Supply & General Merchandise Bath Soap, a practical bathroom essential for hotels, resorts, inns, and other hospitality properties. Available in round and square shapes, with Nature and Green Tea scents and a selection of sizes to suit different guest room requirements.",
         productImage: "bath-soap",
         productImageAlt: "Nature bath soap product of Heijun",
@@ -27,7 +27,7 @@ export const ProductHotelAmenities: Product[] = [
     },
     {
         id: 2,
-        productName: "Hotel Toiletry Bottles",
+        productName: "Shampoo & Conditioner, Lotion, and Body wash bottle",
         productDescription: "Convenient hotel toiletry bottles for guest bathrooms, available for body wash, shampoo & conditioner, and body lotion. Ideal for hotels, resorts, and other hospitality properties.",
         productImage: "hotel-toiletry-bottles",
         productImageAlt: "Hotel toiletry bottles for body wash, shampoo, conditioner, and body lotion",
