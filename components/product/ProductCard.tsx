@@ -31,10 +31,11 @@ export default function ProductCard({
         <Card className="rounded-none p-0 gap-0 bg-yellow1 border-0! ring-0! shadow-none!" key={index}>
           <div className="w-fill p-4 pb-0">
             <Image
-              src={`/images/product/hotel-amenities/${product.productImage}.webp`}
+              src={`/images/product/${productCategory}/${product.productImage}.webp`}
               alt={product.productImageAlt}
               width={500}
               height={500}
+              loading={index < 5 ? "eager" : "lazy"}
             />
           </div>
           <CardHeader className="flex flex-col justify-between h-full p-4">

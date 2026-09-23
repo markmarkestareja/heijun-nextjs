@@ -30,12 +30,12 @@ export default function ProductCategories() {
 
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {ProductCategoriesData.map((productCategory, index) => (
-          <Link href="/about" key={index}>
+          <Link href={`/product/${productCategory.link}`} key={index}>
             <Card className="relative mx-auto w-full h-full pt-0">
               <div className="h-auto w-full relative aspect-video overflow-hidden">
                 <Image
                   src={`/images/home/categories-image/${productCategory.image}`}
-                  alt={productCategory.title}
+                  alt={productCategory.alt}
                   fill
                   sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                   className="object-cover transition-all dark:brightness-40"
