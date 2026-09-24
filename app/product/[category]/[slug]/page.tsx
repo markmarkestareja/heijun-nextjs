@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
@@ -11,10 +12,9 @@ import { ButtonPrimary } from "@/components/ui/button";
 import Footer from "@/components/Footer";
 
 const products: Record<ProductCategory, typeof ProductHotelAmenities> = {
-  "hotel-amenities" : ProductHotelAmenities,
+  "hotel-amenities": ProductHotelAmenities,
   "linens-and-towels": ProductLinenTowel,
-
-}
+};
 
 type Props = {
   params: Promise<{
@@ -23,26 +23,22 @@ type Props = {
   }>;
 };
 
-export async function generateMetadata({
-  params,
-}: Props): Promise<Metadata>{
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { category, slug } = await params;
 
-  if (!(category in products)){
+  if (!(category in products)) {
     return {};
   }
 
   const productList = products[category as ProductCategory];
 
-  const product = productList.find(
-    (product) => product.productLink === slug
-  );
+  const product = productList.find((product) => product.productLink === slug);
 
-  if (!product){
-    return{};
+  if (!product) {
+    return {};
   }
 
-  return{
+  return {
     title: product.metaTitle ?? product.productName,
     description: product.metaDescription ?? product.productDescription,
   };
@@ -51,30 +47,29 @@ export async function generateMetadata({
 export default async function ProductPage({ params }: Props) {
   const { category, slug } = await params;
 
-  if(!(category in products)) {
+  if (!(category in products)) {
     notFound();
   }
 
   const productList = products[category as ProductCategory];
 
-  const product = productList.find(
-    (product) => product.productLink === slug
-  );
+  const product = productList.find((product) => product.productLink === slug);
 
-  if(!product){
+  if (!product) {
     notFound();
   }
-// shadow-[inset_2px_2px_8px_0_rgba(0,0,0,0.25)] border-2 border-yellow3
+  // shadow-[inset_2px_2px_8px_0_rgba(0,0,0,0.25)] border-2 border-yellow3
 
   return (
     <>
       <section className="border pt-25! bg-yellow1 flex flex-col justify-center items-center lg:items-start">
         <p className="mb-4">
-          <Link href={`/product/${category}`}>{category}</Link> / {product.productName}
+          <Link href={`/product/${category}`}>{category}</Link> /{" "}
+          {product.productName}
         </p>
         <div className="relative flex flex-col lg:flex-row justify-center items-center lg:items-start">
           <div className="top-0 flex-1 max-w-150 h-auto bg-yellow2">
-            <Image 
+            <Image
               src={`/images/product/${category}/${product.productImage}.webp`}
               alt={product.productImageAlt}
               width={1000}
@@ -83,12 +78,8 @@ export default async function ProductPage({ params }: Props) {
             />
           </div>
           <div className="flex-1 p-4 ml-8 flex flex-col justify-start item-center lg:items-start gap-6">
-            <h1 className="m-0!">
-              {product.productName}
-            </h1>
-            <p>
-              {product.productDescription}
-            </p>
+            <h1 className="m-0!">{product.productName}</h1>
+            <p>{product.productDescription}</p>
 
             {product.productDetails && (
               <div className="flex flex-col gap-3 text-start">
@@ -101,11 +92,35 @@ export default async function ProductPage({ params }: Props) {
               </div>
             )}
 
+            {product.bedSize && (
+              <div className="flex flex-col gap-3 text-start">
+                <strong>Bed Sizes:</strong>
+
+                <div className="grid grid-cols-2 border">
+                  <div className="border-b border-r p-2 font-semibold">
+                    Category
+                  </div>
+
+                  <div className="border-b p-2 font-semibold">
+                    Dimensions
+                  </div>
+
+                  {product.bedSize.map((bed) => (
+                    <React.Fragment key={bed.name}>
+                      <div className="border-b border-r p-2">{bed.name}</div>
+
+                      <div className="border-b p-2">{bed.dimensions}</div>
+                    </React.Fragment>
+                  ))}
+                </div>
+              </div>
+            )}
+
             <ButtonPrimary link="/contact" label="Inquire about this product" />
           </div>
         </div>
       </section>
-    <Footer />
+      <Footer />
     </>
   );
 }

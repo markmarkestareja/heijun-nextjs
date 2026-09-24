@@ -12,9 +12,31 @@ export const ProductLinenTowel: Product[] = [
     productLink: "hotel-mattress-protector",
     productDetails: [
         {
-            label: "",
+            label: "Details",
             value: "100% Cotton Plain White Fabric and 150 gsm with super soft hypo allergenic anti-bacterial fiber fill",
         },
+    ],
+    bedSize: [
+      {
+        name: "Single",
+        dimensions: '39 x 75"',
+      },
+      {
+        name: "Double",
+        dimensions: '54 x 75"',
+      },
+      {
+        name: "Queen",
+        dimensions: '60 x 80"',
+      },
+      {
+        name: "Eastern King",
+        dimensions: '76 x 80"',
+      },
+      {
+        name: "Western King",
+        dimensions: '72 x 84"',
+      },
     ],
     metaTitle:
       "Mattress Protector for Hospitality | Heijun Hotel Supply & General Merchandise",

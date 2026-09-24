@@ -1,7 +1,4 @@
-export interface BedSize {
-    name: "Single" | "Double" | "Queen" | "Eastern King" | "Western King";
-    dimensions: string;
-}
+
 
 // export interface ProductDetails {
 //     label: string;
@@ -19,6 +16,11 @@ export interface Product {
     productDetails?: {
         label: string;
         value: string;
+    }[];
+
+    bedSize?: {
+        name: string;
+        dimensions: string;
     }[];
 
     metaTitle?: string;
