@@ -16,6 +16,7 @@ export function ButtonPrimary({ link, label, addClass }: ButtonProps) {
               px-6.5
               py-3
               text-light
+              text-center
               bg-linear-to-r
               from-[#ee0000]
               via-[#b50202]

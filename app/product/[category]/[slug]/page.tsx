@@ -76,7 +76,7 @@ export default async function ProductPage({ params }: Props) {
               className="object-contain h-auto w-full"
             />
           </div>
-          <div className="flex-1 p-4 ml-8 flex flex-col justify-start item-center lg:items-start gap-6">
+          <div className="flex-1 pt-4 lg:p-4 lg:ml-8 flex flex-col justify-start item-center lg:items-start gap-6">
             <h1 className="m-0!">{product.productName}</h1>
             <p>{product.productDescription}</p>
 
