@@ -195,21 +195,36 @@ export const ProductLinenTowel: Product[] = [
   },
   {
     id: 27,
-    productName: "Hand & Face Towels",
+    productName: "Hand Towel",
     productDescription:
-      "Soft hand and face towels designed for guest bathrooms, rooms, resorts, spas, inns, and other hospitality settings. Available in multiple sizes and weights to accommodate different guest amenity and operational requirements.",
-    productImage: "hotel-hand-face-towels",
+      "Soft hand towel designed for hotel guest bathrooms, resorts, spas, and other hospitality settings. Available in multiple sizes and weights to suit different guest room and operational requirements.",
+    productImage: "hotel-hand-towel",
     productImageAlt:
-      "White hand and face towels for hotel and hospitality guest bathrooms",
-    productLink: "hotel-hand-face-towels",
+      "White hotel hand towels for guest bathrooms",
+    productLink: "hotel-hand-towel",
     productDetails: [],
     metaTitle:
-      "Hotel Hand & Face Towels for Hospitality | Heijun Hotel Supply & General Merchandise",
+      "Hotel Hand Towel | Heijun Hotel Supply & General Merchandise",
     metaDescription:
-      "Explore hand and face towels from Heijun for hotels, resorts, spas, inns, and other hospitality settings, available in multiple sizes and weights.",
+      "Explore hotel hand towels from Heijun HotelSup, available in multiple sizes and weights for guest bathrooms, hotels, resorts, and hospitality use.",
   },
   {
-    id: 28,
+    id: 29,
+    productName: "Face Towel",
+    productDescription:
+      "Soft face towel designed for hotel guest bathrooms and hospitality amenities. Available in multiple sizes and weights, making it suitable for hotels, resorts, spas, and other guest accommodations.",
+    productImage: "hotel-face-towel",
+    productImageAlt:
+      "White hotel face towels for guest bathrooms",
+    productLink: "hotel-face-towel",
+    productDetails: [],
+    metaTitle:
+      "Hotel Face Towel | Heijun Hotel Supply & General Merchandise",
+    metaDescription:
+      "Shop hotel face towels from Heijun HotelSup, available in multiple sizes and weights for hotels, resorts, spas, and hospitality guest bathrooms.",
+  },
+  {
+    id: 30,
     productName: "Bathrobe",
     productDescription:
       "Comfortable bathrobe available in velvet pile and waffle styles for hotels, resorts, spas, inns, and other hospitality accommodations. Offered in Medium and Large sizes with multiple weight options to suit different guest comfort and hospitality requirements.",
@@ -224,7 +239,7 @@ export const ProductLinenTowel: Product[] = [
       "Discover bathrobes from Heijun for hotels, resorts, spas, inns, and other hospitality accommodations, available in velvet pile and waffle styles with multiple sizes and weight options.",
   },
   {
-    id: 29,
+    id: 31,
     productName: "Bath Mat",
     productDescription:
       "Bath mat designed for guest bathrooms in hotels, resorts, spas, inns, and other hospitality accommodations. Available in plain, frame, Greek border, and foot print designs, with 300g and 240g options to suit different bathroom setups.",
@@ -239,19 +254,34 @@ export const ProductLinenTowel: Product[] = [
       "Explore bath mats from Heijun for hotels, resorts, spas, inns, and other hospitality accommodations, available in plain, frame, Greek border, and foot print designs.",
   },
   {
-    id: 30,
-    productName: "Bath & Pool Towels",
+    id: 32,
+    productName: "Bath Towel",
     productDescription:
-      "Bath and pool towels designed for hotels, resorts, swimming pools, spas, and other hospitality facilities. Bath towels are available in multiple sizes and weights, while pool towels come in a range of striped color combinations and weight options to support different guest and facility requirements.",
-    productImage: "hotel-bath-pool-towels",
+      "Soft bath towel designed for hotel guest bathrooms, resorts, spas, and other hospitality settings. Available in multiple sizes and weights to accommodate different guest room and hospitality requirements.",
+    productImage: "hotel-bath-towel",
     productImageAlt:
-      "White bath towels and striped pool towels for hotels, resorts, and hospitality facilities",
-    productLink: "hotel-bath-pool-towels",
+      "White hotel bath towels for guest bathrooms",
+    productLink: "hotel-bath-towel",
     productDetails: [],
     metaTitle:
-      "Hotel Bath & Pool Towels for Hospitality | Heijun Hotel Supply & General Merchandise",
+      "Hotel Bath Towel | Heijun Hotel Supply & General Merchandise",
     metaDescription:
-      "Shop bath and pool towels from Heijun for hotels, resorts, swimming pools, spas, and other hospitality facilities, available in multiple sizes, weights, and color options.",
+      "Explore hotel bath towels from Heijun HotelSup, available in multiple sizes and weights for hotels, resorts, spas, and guest bathrooms.",
+  },
+  {
+    id: 33,
+    productName: "Pool Towel",
+    productDescription:
+      "Striped pool towel designed for hotels, resorts, swimming pools, spas, and other hospitality facilities. Available in multiple color combinations and weights, with a standard 30 × 59-inch size.",
+    productImage: "hotel-resort-pool-towel",
+    productImageAlt:
+      "Striped hotel and resort pool towels in blue and white",
+    productLink: "hotel-resort-pool-towel",
+    productDetails: [],
+    metaTitle:
+      "Hotel & Resort Pool Towel | Heijun Hotel Supply & General Merchandise",
+    metaDescription:
+      "Shop hotel and resort pool towels from Heijun HotelSup, available in multiple striped colors and weights for pools, spas, and hospitality facilities.",
   },
 ];
 

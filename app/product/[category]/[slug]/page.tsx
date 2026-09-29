@@ -9,7 +9,6 @@ import { ProductLinenTowel } from "@/data/ProductLinenTowel";
 
 import type { ProductCategory } from "@/types/product";
 import { ButtonPrimary } from "@/components/ui/button";
-import Footer from "@/components/Footer";
 
 const products: Record<ProductCategory, typeof ProductHotelAmenities> = {
   "hotel-amenities": ProductHotelAmenities,
@@ -120,7 +119,6 @@ export default async function ProductPage({ params }: Props) {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 }

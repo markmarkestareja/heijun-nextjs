@@ -1,7 +1,6 @@
 import ProductCard from "@/components/product/ProductCard";
 import { notFound } from "next/navigation";
 import type { ProductCategory } from "@/types/product";
-import Footer from "@/components/Footer";
 
 const categories = {
   "hotel-amenities": {
@@ -46,7 +45,6 @@ export default async function ProductCategoryPage({ params }: Props) {
           <ProductCard productCategory={productCategory} />
         </div>
       </section>
-      <Footer />
     </>
   );
 }
