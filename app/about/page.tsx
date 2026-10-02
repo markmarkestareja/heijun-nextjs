@@ -4,8 +4,6 @@ import Mission from '@/components/about/mission';
 import Vision from '@/components/about/Vision';
 import BrandLogos from '@/components/BrandLogos';
 import CTA from '@/components/home/CTA';
-import Footer from '@/components/Footer';
-import Copyright from '@/components/Copyright';
 
 function page() {
   return (
@@ -15,8 +13,6 @@ function page() {
       <Vision />
       <BrandLogos />
       <CTA />
-      <Footer />
-      <Copyright />
     </>
   )
 }
