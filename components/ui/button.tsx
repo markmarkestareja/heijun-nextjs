@@ -21,7 +21,7 @@ export function ButtonPrimary({ link, label, addClass }: ButtonProps) {
               from-[#ee0000]
               via-[#b50202]
               to-[#ee0000]
-              bg-[length:200%_auto]
+              bg-size-[200%_100%]
               bg-left
               transition-all
               duration-500
